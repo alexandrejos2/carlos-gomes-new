@@ -1011,3 +1011,127 @@ a { text-decoration: none; color: inherit; }
   .awards__grid { grid-template-columns: 1fr; }
   .stats__grid  { grid-template-columns: repeat(2,1fr); }
 }
+
+/* ============================================================
+   HERO — COLLECTION BADGE
+   ============================================================ */
+.hero__badge--collection {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: rgba(201,168,76,.15);
+  border: 1px solid rgba(201,168,76,.4);
+  color: var(--gold-light);
+  padding: .4rem 1rem;
+  border-radius: 100px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-left: .5rem;
+}
+@media (max-width: 480px) {
+  .hero__badge--collection { margin-left: 0; }
+}
+
+/* ============================================================
+   AWARDS STRIP
+   ============================================================ */
+.awards-strip {
+  background: #03060f;
+  border-top: 1px solid var(--border-gold);
+  border-bottom: 1px solid var(--border-gold);
+  padding: 1.4rem 0;
+}
+.awards-strip__grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.awards-strip__item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.awards-strip__item i { color: var(--gold); font-size: .85rem; }
+
+/* ============================================================
+   GEOGRAPHIC ZONES
+   ============================================================ */
+.zones__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.zone-card {
+  background: var(--navy);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1.75rem;
+  transition: all var(--ease);
+}
+.zone-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+}
+.zone-card__county {
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.zone-card__county i { font-size: .75rem; }
+.zone-card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.zone-card__list li {
+  font-size: .875rem;
+  color: var(--text-muted);
+  padding-left: .75rem;
+  position: relative;
+}
+.zone-card__list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .zones__grid { grid-template-columns: 1fr; }
+  .awards-strip__grid { gap: 1rem; }
+  .awards-strip__item { font-size: .7rem; }
+}
+
+/* ============================================================
+   FOOTER LEGAL LINE
+   ============================================================ */
+.footer__legal {
+  font-size: .72rem;
+  color: rgba(255,255,255,.25);
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}

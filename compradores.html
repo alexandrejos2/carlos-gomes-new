@@ -4,59 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quero Comprar um Imóvel | Carlos Gomes — RE/MAX Moment</title>
-  <meta name="description" content="Encontre o imóvel dos seus sonhos com o apoio de Carlos Gomes, consultor RE/MAX Moment especialista no Norte de Portugal.">
+  <meta name="description" content="Encontre o imóvel ideal no Norte de Portugal com Carlos Gomes, consultor RE/MAX Moment em Joane. Apoio em português, inglês e francês. AMI 21013.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .coming-hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .coming-hero__bg {
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(135deg, rgba(6,12,29,.97) 0%, rgba(13,27,62,.9) 60%, rgba(6,12,29,.85) 100%),
-        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-    }
-    .coming-hero__bg::after {
-      content: '';
-      position: absolute; bottom: 0; left: 0; right: 0;
-      height: 200px;
-      background: linear-gradient(to top, var(--dark), transparent);
-    }
-    .coming-hero__content {
-      position: relative;
-      z-index: 1;
-      max-width: 640px;
-      padding: 8rem 1.5rem 4rem;
-    }
-    .coming-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: rgba(96,165,250,.12);
-      border: 1px solid rgba(96,165,250,.3);
-      color: #60a5fa;
-      padding: .4rem 1rem;
-      border-radius: 100px;
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
-  </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav__inner">
     <a href="index.html" class="nav__logo">
@@ -71,7 +28,7 @@
       <li><a href="vendedores.html">Vender</a></li>
       <li><a href="compradores.html" class="active">Comprar</a></li>
       <li><a href="avaliacao.html">Avaliar</a></li>
-      <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Imóveis</a></li>
+      <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" rel="noopener">Imóveis</a></li>
       <li><a href="index.html#contact">Contacto</a></li>
     </ul>
     <div class="nav__cta">
@@ -93,37 +50,331 @@
   <a href="https://wa.me/351913155479" class="btn btn--red" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo</a>
 </div>
 
-<section class="coming-hero">
-  <div class="coming-hero__bg"></div>
-  <div class="coming-hero__content">
-    <span class="coming-badge"><i class="fa-solid fa-key"></i> Para compradores</span>
-    <h1 class="sec-title" style="font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:1.25rem">
-      Encontre o imóvel<br>dos seus <span class="text-gold">sonhos.</span>
-    </h1>
-    <p style="font-size:1.05rem;color:var(--text-muted);line-height:1.75;margin-bottom:2.5rem">
-      Esta página está a ser desenvolvida. Entretanto, fale diretamente com Carlos para encontrar o imóvel ideal para si — ele conhece o mercado local como ninguém.
-    </p>
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-      <a href="https://wa.me/351913155479?text=Olá%20Carlos!%20Estou%20à%20procura%20de%20um%20imóvel%20para%20comprar." target="_blank" class="btn btn--gold">
-        <i class="fa-brands fa-whatsapp"></i> Falar via WhatsApp
-      </a>
-      <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" class="btn btn--outline">
-        <i class="fa-solid fa-building"></i> Ver imóveis disponíveis
-      </a>
+
+<!-- HERO -->
+<section class="hero hero--page" style="--hero-bg: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80')">
+  <div class="hero__bg" style="background: linear-gradient(135deg,rgba(6,12,29,.97) 0%,rgba(13,27,62,.92) 60%,rgba(6,12,29,.86) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;"></div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge"><i class="fa-solid fa-key"></i> Para compradores</span>
+      <h1 class="hero__title">
+        Encontre a casa<br>
+        que sempre<br>
+        <span class="text-gold">sonhou.</span>
+      </h1>
+      <p class="hero__sub">
+        Com Carlos Gomes, a procura do imóvel ideal torna-se simples e segura. Conhecimento profundo do mercado local, rede de vendedores exclusiva e apoio completo até à escritura.
+      </p>
+      <ul class="hero__sub-list">
+        <li><i class="fa-solid fa-check"></i> Acesso a imóveis antes de irem a mercado</li>
+        <li><i class="fa-solid fa-check"></i> Negociação do preço em seu nome</li>
+        <li><i class="fa-solid fa-check"></i> Apoio em português, inglês e francês</li>
+      </ul>
+      <div class="hero__actions">
+        <a href="#cta" class="btn btn--red"><i class="fa-solid fa-phone"></i> Falar com Carlos</a>
+        <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" class="btn btn--outline">
+          <i class="fa-solid fa-building"></i> Ver imóveis disponíveis
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+
+<!-- WHY BUY WITH CARLOS -->
+<section class="section section--alt" id="porques">
+  <div class="container">
+    <div class="text-center">
+      <span class="lbl">Por que razão comprar comigo</span>
+      <h2 class="sec-title">O parceiro certo faz<br>toda a <span class="text-gold">diferença.</span></h2>
+      <p class="sec-sub">Comprar um imóvel é uma das decisões mais importantes da sua vida. Ter o consultor certo do seu lado significa menos riscos, melhor preço e mais tranquilidade.</p>
+    </div>
+    <div class="why__grid">
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div class="why-card__title">Conhecimento Local</div>
+        <p class="why-card__txt">18 anos de presença no mercado do Vale do Ave, Famalicão e Guimarães. Conheço os bairros, as ruas e as tendências de valorização antes de toda a gente.</p>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="why-card__title">Rede Exclusiva</div>
+        <p class="why-card__txt">Tenho acesso a imóveis que ainda não estão no mercado público. Muitos compradores encontram a sua casa antes de ela ser anunciada.</p>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-handshake"></i></div>
+        <div class="why-card__title">Negociação Profissional</div>
+        <p class="why-card__txt">Negoceio em seu nome com experiência comprovada. O meu objetivo é garantir que paga o preço justo — e não um cêntimo a mais.</p>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-file-contract"></i></div>
+        <div class="why-card__title">Apoio Jurídico</div>
+        <p class="why-card__txt">Acompanho toda a parte documental e burocrática — CPCV, escritura, registo predial — em parceria com solicitadores e advogados especializados.</p>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-piggy-bank"></i></div>
+        <div class="why-card__title">Soluções de Financiamento</div>
+        <p class="why-card__txt">Parceiros bancários e intermediários de crédito para as melhores condições de crédito habitação — residentes e não-residentes.</p>
+      </div>
+
+      <div class="why-card fade-up">
+        <div class="why-card__ico"><i class="fa-solid fa-headset"></i></div>
+        <div class="why-card__title">Acompanhamento Total</div>
+        <p class="why-card__txt">Desde a primeira visita até à entrega das chaves, estou disponível para esclarecer dúvidas, agilizar processos e garantir a sua tranquilidade.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="section section--darker" id="processo">
+  <div class="container">
+    <div class="text-center">
+      <span class="lbl">Como funciona</span>
+      <h2 class="sec-title">O processo de compra<br>passo a <span class="text-gold">passo.</span></h2>
+      <p class="sec-sub">Um processo estruturado que elimina a incerteza e garante que toma sempre a melhor decisão.</p>
+    </div>
+    <div class="method__track">
+
+      <div class="mstep fade-up">
+        <div class="mstep__num">1</div>
+        <div class="mstep__title">Briefing</div>
+        <p class="mstep__desc">Percebo as suas necessidades reais: zona, tipologia, orçamento e estilo de vida.</p>
+      </div>
+
+      <div class="mstep fade-up">
+        <div class="mstep__num">2</div>
+        <div class="mstep__title">Seleção</div>
+        <p class="mstep__desc">Apresento imóveis pré-selecionados que correspondem ao seu perfil — incluindo off-market.</p>
+      </div>
+
+      <div class="mstep fade-up">
+        <div class="mstep__num">3</div>
+        <div class="mstep__title">Visitas</div>
+        <p class="mstep__desc">Acompanhamento profissional em todas as visitas, com análise honesta de cada imóvel.</p>
+      </div>
+
+      <div class="mstep fade-up">
+        <div class="mstep__num">4</div>
+        <div class="mstep__title">Proposta</div>
+        <p class="mstep__desc">Negocio o melhor preço em seu nome e acompanho a assinatura do CPCV com toda a segurança.</p>
+      </div>
+
+      <div class="mstep fade-up">
+        <div class="mstep__num">5</div>
+        <div class="mstep__title">Escritura</div>
+        <p class="mstep__desc">Acompanhamento total até à escritura e entrega das chaves. A sua casa, finalmente.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- EMIGRANTES / INTERNATIONAL -->
+<section class="section section--alt" id="emigrantes">
+  <div class="container">
+    <div class="excl__grid">
+      <div>
+        <span class="lbl">Para emigrantes e investidores estrangeiros</span>
+        <h2 class="sec-title">A comprar em Portugal<br>a partir do <span class="text-gold">estrangeiro?</span></h2>
+        <p class="sec-sub" style="margin-bottom:2rem">A forte ligação do Norte de Portugal a países como França e Suíça torna muitas compras um processo à distância. Carlos Gomes tem experiência e disponibilidade para acompanhar todo o processo sem que precise de se deslocar.</p>
+        <div class="about__checks">
+          <div class="about__check"><i class="fa-solid fa-check-circle"></i> Atendimento em português, inglês e francês</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle"></i> Visitas virtuais e videochamadas para decisão à distância</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle"></i> Parceiros de crédito habitação para não-residentes</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle"></i> Representação e procuração tratadas localmente</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle"></i> Comunidade do Vale do Ave na França e Suíça — experiência real</div>
+        </div>
+      </div>
+      <div class="excl__box fade-up">
+        <div style="display:flex;gap:.75rem;margin-bottom:1.5rem;font-size:1.5rem">
+          <span title="Português">🇵🇹</span>
+          <span title="English">🇬🇧</span>
+          <span title="Français">🇫🇷</span>
+        </div>
+        <p style="font-size:.95rem;font-style:italic;color:var(--text-light);line-height:1.75;margin-bottom:1.25rem">"Ajudo emigrantes a encontrar e comprar a casa de regresso — com a mesma dedicação que daria a um cliente presencial."</p>
+        <cite style="font-size:.78rem;color:var(--text-muted)">— Carlos Gomes, AMI 21013</cite>
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:1.75rem">
+          <a href="https://wa.me/351913155479?text=Bonjour%20Carlos!%20Je%20cherche%20un%20bien%20immobilier%20au%20Portugal." target="_blank" class="btn btn--gold" style="justify-content:center">
+            <i class="fa-brands fa-whatsapp"></i> Contactar em francês
+          </a>
+          <a href="https://wa.me/351913155479?text=Hello%20Carlos!%20I%20am%20looking%20to%20buy%20a%20property%20in%20Portugal." target="_blank" class="btn btn--outline-gold" style="justify-content:center">
+            <i class="fa-brands fa-whatsapp"></i> Contact in English
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ZONES -->
+<section class="section section--darker" id="zonas">
+  <div class="container">
+    <div class="text-center">
+      <span class="lbl">Onde atuo</span>
+      <h2 class="sec-title">Especialista em<br><span class="text-gold">14 freguesias</span> do Norte</h2>
+      <p class="sec-sub">Conhecimento profundo do mercado local — valorização, infraestruturas, comunidade e potencial de investimento.</p>
+    </div>
+    <div class="zones__grid">
+      <div class="zone-card fade-up">
+        <div class="zone-card__county"><i class="fa-solid fa-location-dot"></i> Vila Nova de Famalicão</div>
+        <ul class="zone-card__list">
+          <li>Joane</li><li>Pedome</li><li>Cruz</li><li>Mogege</li>
+          <li>Riba de Ave</li><li>Delães</li><li>Brufe</li>
+        </ul>
+      </div>
+      <div class="zone-card fade-up">
+        <div class="zone-card__county"><i class="fa-solid fa-location-dot"></i> Guimarães</div>
+        <ul class="zone-card__list">
+          <li>Ronfe</li><li>Airão Santa Maria</li><li>Airão São João</li>
+          <li>Vermil</li><li>São Jorge de Selho</li>
+        </ul>
+      </div>
+      <div class="zone-card fade-up">
+        <div class="zone-card__county"><i class="fa-solid fa-location-dot"></i> Vila Pouca de Aguiar</div>
+        <ul class="zone-card__list">
+          <li>Vreia de Bornes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="section section--alt" id="testemunhos">
+  <div class="container">
+    <div class="text-center">
+      <span class="lbl">O que dizem os compradores</span>
+      <h2 class="sec-title">Encontraram a sua <span class="text-gold">casa ideal.</span></h2>
+    </div>
+    <div class="testi__grid" style="margin-top:3rem">
+
+      <div class="testi-card fade-up">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__q">"Procurámos durante meses sem sucesso até conhecermos o Carlos. Em duas semanas encontrou exatamente o que precisávamos. Profissionalismo e dedicação fora do comum."</p>
+        <div class="testi-card__author">
+          <div class="testi-card__av">JS</div>
+          <div>
+            <div class="testi-card__name">João e Sara Mendes</div>
+            <div class="testi-card__loc">Guimarães · Moradia V3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__q">"Emigrante em França há 20 anos, quis comprar casa em Joane. O Carlos tratou de tudo à distância. Só apareci na escritura. Impecável do início ao fim."</p>
+        <div class="testi-card__author">
+          <div class="testi-card__av">MM</div>
+          <div>
+            <div class="testi-card__name">Manuel Monteiro</div>
+            <div class="testi-card__loc">Paris → Joane · Apartamento T3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__q">"Era a nossa primeira compra e estávamos muito perdidos. O Carlos explicou cada passo, negociou um excelente preço e esteve sempre disponível. Recomendo a toda a gente."</p>
+        <div class="testi-card__author">
+          <div class="testi-card__av">CF</div>
+          <div>
+            <div class="testi-card__name">Carolina e Filipe Sousa</div>
+            <div class="testi-card__loc">Riba de Ave · Apartamento T2</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-sec" id="cta">
+  <div class="container">
+    <div class="cta-sec__inner">
+      <span class="lbl" style="justify-content:center;display:flex">Pronto para começar?</span>
+      <h2 class="cta-sec__title">Vamos encontrar<br>a sua <span class="text-gold">casa ideal.</span></h2>
+      <p class="cta-sec__txt">Diga-me o que procura — zona, tipologia, orçamento. Trato do resto. Sem custos para o comprador.</p>
+      <div class="cta-sec__btns">
+        <a href="https://wa.me/351913155479?text=Olá%20Carlos!%20Estou%20à%20procura%20de%20um%20imóvel%20para%20comprar." target="_blank" class="btn btn--gold">
+          <i class="fa-brands fa-whatsapp"></i> Falar via WhatsApp
+        </a>
+        <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" class="btn btn--outline">
+          <i class="fa-solid fa-building"></i> Ver imóveis disponíveis
+        </a>
+      </div>
+      <p style="margin-top:1.75rem;font-size:.82rem;color:var(--text-muted)">
+        <i class="fa-solid fa-clock" style="color:var(--gold)"></i> Resposta garantida em menos de 2 horas
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer__btm" style="border:none;padding-top:0">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:.25rem">
+          <div class="nav__logo-mark"><img src="https://res.cloudinary.com/dxrk58emm/image/upload/v1777553093/logo_f4qcwg.jpg" alt="RE/MAX Moment"></div>
+          <div class="nav__logo-stack">
+            <span class="nav__logo-name">Carlos Gomes</span>
+            <span class="nav__logo-sub">RE/MAX Moment</span>
+          </div>
+        </div>
+        <p class="footer__brand-txt">Consultor imobiliário de referência no Norte de Portugal, com mais de 18 anos de experiência e centenas de famílias ajudadas.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/remax_moment" target="_blank" class="footer__soc"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/351913155479" target="_blank" class="footer__soc"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-hd">Serviços</div>
+        <ul class="footer__links">
+          <li><a href="vendedores.html">Quero Vender</a></li>
+          <li><a href="compradores.html">Quero Comprar</a></li>
+          <li><a href="avaliacao.html">Avaliar Imóvel</a></li>
+          <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Explorar Imóveis</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-hd">Sobre</div>
+        <ul class="footer__links">
+          <li><a href="index.html#sobre">Carlos Gomes</a></li>
+          <li><a href="#testemunhos">Testemunhos</a></li>
+          <li><a href="https://www.remax.pt/moment" target="_blank">RE/MAX Moment</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-hd">Contacto</div>
+        <ul class="footer__links">
+          <li><a href="tel:+351913155479">913 155 479</a></li>
+          <li><a href="tel:+351252213036">252 213 036</a></li>
+          <li><a href="index.html#contact">Enviar mensagem</a></li>
+          <li><a href="https://maps.google.com/?q=Avenida+Doutor+Mário+Soares+2081+Loja+3+Joane+Vila+Nova+de+Famalicão" target="_blank">Como chegar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__btm">
       <p class="footer__copy">&copy; 2026 Carlos Gomes · RE/MAX Moment. Todos os direitos reservados.</p>
       <ul class="footer__btm-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="vendedores.html">Vender</a></li>
-        <li><a href="index.html#contact">Contacto</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
       </ul>
     </div>
+    <p class="footer__legal">Team Carlos Gomes – Mediação Imobiliária, Lda &nbsp;|&nbsp; NIF 515 239 011 &nbsp;|&nbsp; AMI 21013</p>
   </div>
 </footer>
 
