@@ -1067,59 +1067,55 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    GEOGRAPHIC ZONES
    ============================================================ */
-.zones__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+.zones-norte {
+  text-align: center;
   margin-top: 3rem;
 }
-.zone-card {
+.zones-norte__region {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  background: rgba(201,168,76,.1);
+  border: 1px solid var(--border-gold);
+  border-radius: 999px;
+  padding: .5rem 1.4rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 2rem;
+}
+.zones-norte__region i { font-size: .75rem; }
+.zones-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: center;
+}
+.zones-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
   background: var(--navy);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 1.75rem;
-  transition: all var(--ease);
-}
-.zone-card:hover {
-  border-color: var(--border-gold);
-  transform: translateY(-3px);
-}
-.zone-card__county {
-  font-size: .8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--gold);
-  margin-bottom: 1rem;
-  padding-bottom: .75rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-.zone-card__county i { font-size: .75rem; }
-.zone-card__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: .45rem;
-}
-.zone-card__list li {
-  font-size: .875rem;
+  border-radius: var(--r-sm);
+  padding: .6rem 1.1rem;
+  font-size: .85rem;
+  font-weight: 600;
   color: var(--text-muted);
-  padding-left: .75rem;
-  position: relative;
+  transition: border-color var(--ease), color var(--ease), transform var(--ease);
 }
-.zone-card__list li::before {
-  content: '·';
-  position: absolute;
-  left: 0;
+.zones-pill:hover {
+  border-color: var(--border-gold);
+  color: var(--gold-light);
+  transform: translateY(-2px);
+}
+.zones-pill i {
   color: var(--gold);
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: .7rem;
 }
 @media (max-width: 768px) {
-  .zones__grid { grid-template-columns: 1fr; }
   .awards-strip__grid { gap: 1rem; }
   .awards-strip__item { font-size: .7rem; }
 }
