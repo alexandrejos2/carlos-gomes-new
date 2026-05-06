@@ -56,7 +56,7 @@ function animateCounter(el) {
   let current = 0;
   const tick = () => {
     current = Math.min(current + step, target);
-    el.textContent = Math.round(current) + suffix;
+    el.textContent = Math.round(current).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + suffix;
     if (current < target) requestAnimationFrame(tick);
   };
   tick();
