@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quero Comprar um Imóvel | Carlos Gomes — RE/MAX Moment</title>
+  <meta name="description" content="Encontre o imóvel dos seus sonhos com o apoio de Carlos Gomes, consultor RE/MAX Moment especialista no Norte de Portugal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .coming-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .coming-hero__bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(135deg, rgba(6,12,29,.97) 0%, rgba(13,27,62,.9) 60%, rgba(6,12,29,.85) 100%),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    }
+    .coming-hero__bg::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to top, var(--dark), transparent);
+    }
+    .coming-hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      padding: 8rem 1.5rem 4rem;
+    }
+    .coming-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(96,165,250,.12);
+      border: 1px solid rgba(96,165,250,.3);
+      color: #60a5fa;
+      padding: .4rem 1rem;
+      border-radius: 100px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark"><img src="https://res.cloudinary.com/dxrk58emm/image/upload/v1777553093/logo_f4qcwg.jpg" alt="RE/MAX Moment"></div>
+      <div class="nav__logo-stack">
+        <span class="nav__logo-name">Carlos Gomes</span>
+        <span class="nav__logo-sub">RE/MAX Moment · Joane</span>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="vendedores.html">Vender</a></li>
+      <li><a href="compradores.html" class="active">Comprar</a></li>
+      <li><a href="avaliacao.html">Avaliar</a></li>
+      <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Imóveis</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="https://wa.me/351913155479" target="_blank" class="btn btn--red" style="padding:.65rem 1.4rem;font-size:.84rem;">
+        <i class="fa-brands fa-whatsapp"></i> Contactar
+      </a>
+    </div>
+    <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="nav__mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="vendedores.html">Vender</a>
+  <a href="compradores.html">Comprar</a>
+  <a href="avaliacao.html">Avaliar Imóvel</a>
+  <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Explorar Imóveis</a>
+  <a href="index.html#contact">Contacto</a>
+  <a href="https://wa.me/351913155479" class="btn btn--red" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo</a>
+</div>
+
+<section class="coming-hero">
+  <div class="coming-hero__bg"></div>
+  <div class="coming-hero__content">
+    <span class="coming-badge"><i class="fa-solid fa-key"></i> Para compradores</span>
+    <h1 class="sec-title" style="font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:1.25rem">
+      Encontre o imóvel<br>dos seus <span class="text-gold">sonhos.</span>
+    </h1>
+    <p style="font-size:1.05rem;color:var(--text-muted);line-height:1.75;margin-bottom:2.5rem">
+      Esta página está a ser desenvolvida. Entretanto, fale diretamente com Carlos para encontrar o imóvel ideal para si — ele conhece o mercado local como ninguém.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="https://wa.me/351913155479?text=Olá%20Carlos!%20Estou%20à%20procura%20de%20um%20imóvel%20para%20comprar." target="_blank" class="btn btn--gold">
+        <i class="fa-brands fa-whatsapp"></i> Falar via WhatsApp
+      </a>
+      <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" class="btn btn--outline">
+        <i class="fa-solid fa-building"></i> Ver imóveis disponíveis
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__btm" style="border:none;padding-top:0">
+      <p class="footer__copy">&copy; 2026 Carlos Gomes · RE/MAX Moment. Todos os direitos reservados.</p>
+      <ul class="footer__btm-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="vendedores.html">Vender</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

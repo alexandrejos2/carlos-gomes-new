@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Gratuita do Meu Imóvel | Carlos Gomes — RE/MAX Moment</title>
+  <meta name="description" content="Saiba quanto vale o seu imóvel. Avaliação gratuita e rigorosa por Carlos Gomes, consultor RE/MAX Moment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .aval-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .aval-hero__bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(135deg, rgba(6,12,29,.97) 0%, rgba(13,27,62,.9) 55%, rgba(6,12,29,.87) 100%),
+        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    }
+    .aval-hero__bg::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to top, var(--dark), transparent);
+    }
+    .aval-hero__grid {
+      display: grid;
+      grid-template-columns: 6fr 5fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding-top: calc(var(--nav-h) + 2rem);
+      padding-bottom: 4rem;
+    }
+    .aval-form-card {
+      background: rgba(13,27,62,.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--r-lg);
+      padding: 2.5rem;
+    }
+    .aval-form-card__title {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      margin-bottom: .4rem;
+    }
+    .aval-form-card__sub {
+      font-size: .85rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+    }
+    @media (max-width: 768px) {
+      .aval-hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark"><img src="https://res.cloudinary.com/dxrk58emm/image/upload/v1777553093/logo_f4qcwg.jpg" alt="RE/MAX Moment"></div>
+      <div class="nav__logo-stack">
+        <span class="nav__logo-name">Carlos Gomes</span>
+        <span class="nav__logo-sub">RE/MAX Moment · Joane</span>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="vendedores.html">Vender</a></li>
+      <li><a href="compradores.html">Comprar</a></li>
+      <li><a href="avaliacao.html" class="active">Avaliar</a></li>
+      <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Imóveis</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="https://wa.me/351913155479" target="_blank" class="btn btn--red" style="padding:.65rem 1.4rem;font-size:.84rem;">
+        <i class="fa-brands fa-whatsapp"></i> Contactar
+      </a>
+    </div>
+    <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="nav__mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="vendedores.html">Vender</a>
+  <a href="compradores.html">Comprar</a>
+  <a href="avaliacao.html">Avaliar Imóvel</a>
+  <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank">Explorar Imóveis</a>
+  <a href="index.html#contact">Contacto</a>
+  <a href="https://wa.me/351913155479" class="btn btn--red" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo</a>
+</div>
+
+<section class="aval-hero">
+  <div class="aval-hero__bg"></div>
+  <div class="container">
+    <div class="aval-hero__grid">
+      <div>
+        <span class="hero__badge" style="margin-bottom:1.5rem">
+          <i class="fa-solid fa-chart-line"></i> Avaliação gratuita
+        </span>
+        <h1 class="hero__title" style="font-size:clamp(2.2rem,5vw,4rem)">
+          Quanto vale<br>o seu <span class="text-gold">imóvel?</span>
+        </h1>
+        <p class="hero__sub">
+          Descubra o valor real do seu imóvel no mercado atual. A avaliação é gratuita, sem compromisso e baseada em dados reais de transações recentes na sua zona.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:2rem">
+          <div class="about__check"><i class="fa-solid fa-check-circle" style="color:var(--gold)"></i> Análise comparativa com imóveis vendidos na sua zona</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle" style="color:var(--gold)"></i> Sem custo e sem compromisso de venda</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle" style="color:var(--gold)"></i> Resultado em 24 horas</div>
+          <div class="about__check"><i class="fa-solid fa-check-circle" style="color:var(--gold)"></i> Feita por especialista com 15 anos de mercado</div>
+        </div>
+      </div>
+
+      <div class="aval-form-card">
+        <div class="aval-form-card__title">Pedir avaliação gratuita</div>
+        <p class="aval-form-card__sub">Preencha os dados e entrarei em contacto em menos de 24h.</p>
+        <form class="contact__form js-contact-form">
+          <div class="fg">
+            <label for="av-name">Nome</label>
+            <input type="text" id="av-name" name="name" placeholder="O seu nome" required>
+          </div>
+          <div class="fg">
+            <label for="av-phone">Telefone / WhatsApp</label>
+            <input type="tel" id="av-phone" name="phone" placeholder="9XX XXX XXX" required>
+          </div>
+          <div class="fg">
+            <label for="av-type">Tipo de imóvel</label>
+            <select id="av-type" name="subject">
+              <option value="Apartamento T1">Apartamento T1</option>
+              <option value="Apartamento T2">Apartamento T2</option>
+              <option value="Apartamento T3">Apartamento T3</option>
+              <option value="Apartamento T4+">Apartamento T4+</option>
+              <option value="Moradia V2/V3">Moradia V2/V3</option>
+              <option value="Moradia V4+">Moradia V4+</option>
+              <option value="Terreno">Terreno</option>
+              <option value="Comercial">Espaço Comercial</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="av-address">Morada / Localidade</label>
+            <input type="text" id="av-address" name="message" placeholder="Ex: Rua das Flores, Joane">
+          </div>
+          <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;margin-top:.5rem">
+            <i class="fa-solid fa-paper-plane"></i> Pedir Avaliação Gratuita
+          </button>
+          <p style="font-size:.75rem;color:var(--text-muted);text-align:center;margin-top:.75rem">
+            A avaliação é gratuita e sem qualquer compromisso.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__btm" style="border:none;padding-top:0">
+      <p class="footer__copy">&copy; 2026 Carlos Gomes · RE/MAX Moment. Todos os direitos reservados.</p>
+      <ul class="footer__btm-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="vendedores.html">Vender</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
