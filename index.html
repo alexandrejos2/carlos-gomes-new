@@ -28,7 +28,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,18 +46,20 @@
         <span class="nav__logo-sub">RE/MAX Moment · Joane</span>
       </div>
     </a>
-    <ul class="nav__links">
-      <li><a href="index.html" class="active">Início</a></li>
-      <li><a href="vendedores.html">Vender</a></li>
-      <li><a href="compradores.html">Comprar</a></li>
-      <li><a href="avaliacao.html">Avaliar</a></li>
-      <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" rel="noopener">Imóveis</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-    <div class="nav__cta">
-      <a href="https://wa.me/351913155479" target="_blank" class="btn btn--red" style="padding:.65rem 1.4rem;font-size:.84rem;">
-        <i class="fa-brands fa-whatsapp"></i> Contactar
-      </a>
+    <div class="nav__actions">
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="vendedores.html">Vender</a></li>
+        <li><a href="compradores.html">Comprar</a></li>
+        <li><a href="avaliacao.html">Avaliar</a></li>
+        <li><a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" rel="noopener">Imóveis</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="https://wa.me/351913155479" target="_blank" class="btn btn--outline-gold" style="padding:.65rem 1.4rem;font-size:.84rem;">
+          FALAR AGORA
+        </a>
+      </div>
     </div>
     <button class="nav__toggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -82,33 +84,34 @@
      ============================================================ -->
 <section class="hero hero--split">
   <div class="hero__bg"></div>
-  <div class="container">
+  <div class="container hero__container-text">
     <div class="hero__content">
-      <span class="hero__badge hero__badge--collection">
-        <i class="fa-solid fa-gem"></i>
-        RE/MAX Collection &mdash; Agente Certificado de Luxo
-      </span>
+      <div class="hero__overline">
+        <span class="hero__overline-line"></span>
+        CARLOS GOMES REAL ESTATE
+      </div>
       <h1 class="hero__title">
-        Mais de 18 anos<br>
-        a transformar sonhos<br>
-        em <span class="text-gold">realidade.</span>
+        <span class="htl">Mais de 18 anos</span>
+        <span class="htl htl--shift">a transformar</span>
+        <span class="htl htl--shift"><span class="htl__word">sonhos<svg class="htl__curve" viewBox="0 0 300 12" fill="none" preserveAspectRatio="none"><path d="M1 10.5C50 3.5 150 -4.5 299 10.5" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg></span></span>
+        <span class="htl">em <em>realidade</em>.</span>
       </h1>
       <p class="hero__sub">
         Carlos Gomes é um dos consultores imobiliários mais experientes e reconhecidos do Norte de Portugal. Com centenas de famílias ajudadas, o seu compromisso é sempre o melhor resultado para si.
       </p>
       <div class="hero__actions">
-        <a href="vendedores.html" class="btn btn--red">
-          <i class="fa-solid fa-home"></i> Quero Vender
+        <a href="vendedores.html" class="btn btn--outline-gold">
+          FALAR DIRETAMENTE
         </a>
-        <a href="compradores.html" class="btn btn--outline">
-          <i class="fa-solid fa-search"></i> Quero Comprar
+        <a href="avaliacao.html" class="btn btn--outline">
+          AVALIAR IMÓVEL
         </a>
       </div>
     </div>
+  </div>
 
-    <div class="hero--split__img-wrap fade-up">
-      <img src="https://res.cloudinary.com/dxrk58emm/image/upload/v1777992890/Carlos_Gomes-3_-_Editado_eire1j.png" alt="Carlos Gomes — Consultor Imobiliário RE/MAX Moment">
-    </div>
+  <div class="hero--split__img-wrap fade-up">
+    <img src="https://res.cloudinary.com/dxrk58emm/image/upload/v1777992890/Carlos_Gomes-3_-_Editado_eire1j.png" alt="Carlos Gomes — Consultor Imobiliário RE/MAX Moment">
   </div>
   <div class="hero__scroll-hint">
     <span>Explorar</span>
@@ -157,42 +160,85 @@
     <div class="services__grid">
 
       <a href="vendedores.html" class="svc-card fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-house-circle-check"></i></div>
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 22L20 7L35 22"/>
+            <path d="M9 22V34H31V22"/>
+            <path d="M16 34V25H24V34"/>
+            <path d="M29 15l4-4M33 11v4M29 11h4"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Quero Vender</div>
         <p class="svc-card__desc">Venda o seu imóvel pelo melhor preço, com uma estratégia de marketing completa e acompanhamento de ponta a ponta.</p>
         <span class="svc-card__cta">Saber mais <i class="fa-solid fa-arrow-right"></i></span>
       </a>
 
-      <a href="compradores.html" class="svc-card svc-card--blue fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-key"></i></div>
+      <a href="compradores.html" class="svc-card fade-up">
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="16" r="9"/>
+            <path d="M20.5 22.5L36 36"/>
+            <path d="M29 32v4"/>
+            <path d="M33 36h4"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Quero Comprar</div>
         <p class="svc-card__desc">Encontre o imóvel ideal com o apoio de um especialista que conhece profundamente o mercado local e nacional.</p>
         <span class="svc-card__cta">Saber mais <i class="fa-solid fa-arrow-right"></i></span>
       </a>
 
-      <a href="avaliacao.html" class="svc-card svc-card--gold fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-chart-line"></i></div>
+      <a href="avaliacao.html" class="svc-card fade-up">
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 34H36M4 34V6"/>
+            <path d="M10 34V22M18 34V16M26 34V10M34 34V18"/>
+            <path d="M10 22L18 16L26 10L34 18"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Avaliar o Meu Imóvel</div>
         <p class="svc-card__desc">Saiba quanto vale o seu imóvel com uma avaliação rigorosa, baseada em dados reais do mercado atual.</p>
         <span class="svc-card__cta">Pedir avaliação <i class="fa-solid fa-arrow-right"></i></span>
       </a>
 
-      <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" rel="noopener" class="svc-card svc-card--teal fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-building"></i></div>
+      <a href="https://remax.pt/pt/comprar/imoveis/h/r/r/r/t?s=%7B%22us%22%3A%22126511001%22%2C%22nm%22%3A%22Carlos%20Gomes%22%2C%22os%22%3A%22false%22%7D&p=1&o=-PublishDate" target="_blank" rel="noopener" class="svc-card fade-up">
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="8" width="20" height="26"/>
+            <path d="M4 34h32"/>
+            <rect x="15" y="14" width="4" height="4"/>
+            <rect x="21" y="14" width="4" height="4"/>
+            <rect x="15" y="22" width="4" height="4"/>
+            <rect x="21" y="22" width="4" height="4"/>
+            <path d="M17 34V29H23V34"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Explorar Imóveis</div>
         <p class="svc-card__desc">Consulte o portefólio completo de imóveis disponíveis — apartamentos, moradias, terrenos e muito mais.</p>
-        <span class="svc-card__cta">Ver portefólio <i class="fa-solid fa-arrow-right fa-xs"></i></span>
+        <span class="svc-card__cta">Ver portefólio <i class="fa-solid fa-arrow-right"></i></span>
       </a>
 
       <a href="equipa.html" class="svc-card fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-people-group"></i></div>
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="15" cy="13" r="6"/>
+            <path d="M3 36c0-7 5-11 12-11s12 4 12 11"/>
+            <circle cx="28" cy="12" r="5"/>
+            <path d="M25 25c3-1 6 0 8 2s4 5 4 9"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Junte-se à Equipa</div>
         <p class="svc-card__desc">Quer construir uma carreira de sucesso no imobiliário? A equipa RE/MAX Moment tem o ambiente e o apoio certo para si.</p>
         <span class="svc-card__cta">Saber mais <i class="fa-solid fa-arrow-right"></i></span>
       </a>
 
-      <a href="#financiamento" class="svc-card svc-card--gold fade-up">
-        <div class="svc-card__ico"><i class="fa-solid fa-piggy-bank"></i></div>
+      <a href="#financiamento" class="svc-card fade-up">
+        <div class="svc-card__ico">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 3L37 15L20 37L3 15Z"/>
+            <path d="M3 15h34"/>
+            <path d="M12 15L20 3L28 15"/>
+          </svg>
+        </div>
         <div class="svc-card__title">Soluções de Financiamento</div>
         <p class="svc-card__desc">Aceda às melhores condições de crédito habitação com o apoio de especialistas financeiros parceiros.</p>
         <span class="svc-card__cta">Explorar opções <i class="fa-solid fa-arrow-right"></i></span>
